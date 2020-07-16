@@ -1,0 +1,29 @@
+
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZmFyaGFuIGFtbWFyIiwiaWF0IjoxNTk0ODI4NzkyLCJleHAiOjE1OTQ4Mjg4MTJ9.a1vNUByUV4tv3deweUi1aHV3m3v3rQ3x4aWe2I0wNKk
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "farhan ammar"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZmFyaGFuIGFtbWFyIiwiaWF0IjoxNTk0ODI4NzI2fQ.DLlBcgMWFpqScUBT96TEjPpG2wsXCbN_1LoKaM3wy6E"
+}
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZmFyaGFuIGFtbWFyIiwiaWF0IjoxNTk0ODI4NzI2fQ.DLlBcgMWFpqScUBT96TEjPpG2wsXCbN_1LoKaM3wy6E"
+}
